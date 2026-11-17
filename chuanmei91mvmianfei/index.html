@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>传媒91mv免费播放-在线影视片单与观看指南</title>
+<meta name="description" content="传媒91mv免费播放频道整理院线新片、剧集更新与纪录片片单，按题材、时长、清晰度筛选，附播放规则说明、观众评分与逐条观感，帮你在有限时间挑到合适的片子。">
+<meta name="keywords" content="传媒91mv免费播放">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2340'/%3E%3Cpath d='M18 46V18h8l6 12 6-12h8v28h-7V30l-7 13-7-13v16z' fill='%23ffb84d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --c-bg:#f4f2ee;
+  --c-surface:#ffffff;
+  --c-ink:#1b2340;
+  --c-ink-soft:#414a66;
+  --c-muted:#6c7488;
+  --c-line:#dfdcd4;
+  --c-accent:#c8452b;
+  --c-accent-soft:#fbe9e4;
+  --c-gold:#b8860b;
+  --c-gold-soft:#fdf3da;
+  --c-teal:#1f6f6b;
+  --c-teal-soft:#e2f0ee;
+  --c-dark:#141a2e;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 2px rgba(20,26,46,.06),0 2px 8px rgba(20,26,46,.05);
+  --shadow-m:0 4px 14px rgba(20,26,46,.09);
+  --f-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --f-serif:"Songti SC","SimSun","Noto Serif SC",serif;
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --top-announce:38px;
+  --top-header:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--top-announce) + var(--top-header) + 8px)}
+body{margin:0;background:var(--c-bg);color:var(--c-ink);font-family:var(--f-sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--c-accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{line-height:1.35;margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--c-teal);outline-offset:2px;border-radius:4px}
+
+/* ============ 吸顶公告 + 页头 ============ */
+.top-wrap{position:sticky;top:0;z-index:90}
+.announce{background:var(--c-dark);color:#e9e6de;font-size:13px;min-height:var(--top-announce);display:flex;align-items:center}
+.announce-inner{max-width:1200px;margin:0 auto;padding:0 var(--sp-4);display:flex;align-items:center;gap:var(--sp-3);width:100%;flex-wrap:wrap}
+.announce b{color:#ffcf7a;font-weight:600}
+.announce .dot{width:7px;height:7px;border-radius:50%;background:var(--c-accent);flex:none;box-shadow:0 0 0 3px rgba(200,69,43,.25)}
+.announce a{color:#ffcf7a;text-decoration:underline;text-underline-offset:3px}
+.site-head{background:var(--c-surface);border-bottom:1px solid var(--c-line);box-shadow:var(--shadow-s)}
+.head-inner{max-width:1200px;margin:0 auto;padding:0 var(--sp-4);min-height:var(--top-header);display:flex;align-items:center;gap:var(--sp-4);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:36px;height:36px;flex:none}
+.brand-text{font-family:var(--f-serif);font-weight:700;font-size:19px;letter-spacing:.5px;color:var(--c-ink);white-space:nowrap}
+.main-nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:var(--sp-2)}
+.main-nav a{padding:7px 11px;border-radius:var(--radius-s);color:var(--c-ink-soft);font-size:14.5px;white-space:nowrap}
+.main-nav a:hover{background:var(--c-accent-soft);color:var(--c-accent);text-decoration:none}
+.nav-toggle{display:none;background:none;border:1px solid var(--c-line);border-radius:var(--radius-s);padding:6px 10px;font-size:14px;color:var(--c-ink);cursor:pointer;align-items:center;gap:6px}
+.search-box{margin-left:auto;display:flex;align-items:center;gap:6px;position:relative}
+.search-box input{border:1px solid var(--c-line);background:#faf9f6;border-radius:var(--radius-s);padding:7px 10px;font-size:14px;width:168px;color:var(--c-ink)}
+.search-box input:focus{background:#fff;border-color:var(--c-teal)}
+.search-box button{border:0;background:var(--c-ink);color:#fff;border-radius:var(--radius-s);padding:7px 12px;font-size:14px;cursor:pointer}
+.search-box button:hover{background:var(--c-accent)}
+.search-msg{position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--c-line);border-radius:var(--radius-s);box-shadow:var(--shadow-m);padding:8px 12px;font-size:13px;width:260px;display:none;z-index:99;color:var(--c-ink-soft)}
+.search-msg.show{display:block}
+
+/* ============ 布局 ============ */
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--sp-4)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-6);align-items:start}
+main{min-width:0}
+section{margin-bottom:var(--sp-7)}
+
+.sec-head{display:flex;align-items:baseline;gap:var(--sp-3);margin-bottom:var(--sp-4);border-bottom:2px solid var(--c-ink);padding-bottom:var(--sp-2);flex-wrap:wrap}
+.sec-head h2{font-family:var(--f-serif);font-size:23px;letter-spacing:.5px}
+.sec-head .hint{font-size:13px;color:var(--c-muted)}
+.sec-head .more{margin-left:auto;font-size:13.5px}
+
+/* ============ 首屏 ============ */
+.hero{background:var(--c-dark);color:#f0ede6;border-radius:var(--radius-l);overflow:hidden;position:relative;margin-top:var(--sp-5)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--sp-5);padding:var(--sp-6);align-items:center}
+.hero h1{font-family:var(--f-serif);font-size:clamp(26px,3.6vw,40px);letter-spacing:1px;color:#fff}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#ffcf7a;border:1px solid rgba(255,207,122,.4);padding:3px 10px;border-radius:99px;margin-bottom:var(--sp-3);letter-spacing:1px}
+.hero p{color:#c9c6bd;font-size:15.5px;max-width:46em;margin:var(--sp-3) 0 var(--sp-4)}
+.hero-actions{display:flex;gap:var(--sp-3);flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 20px;border-radius:var(--radius-s);font-size:15px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--c-accent);color:#fff}
+.btn-primary:hover{background:#a83620;text-decoration:none;color:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#f0ede6}
+.btn-ghost:hover{background:rgba(255,255,255,.1);text-decoration:none;color:#fff}
+.hero-stats{display:flex;gap:var(--sp-5);margin-top:var(--sp-5);flex-wrap:wrap}
+.hero-stats div strong{display:block;font-size:24px;font-family:var(--f-serif);color:#ffcf7a;line-height:1.1}
+.hero-stats div span{font-size:12.5px;color:#9d9a92}
+.hero-art{position:relative;min-height:270px}
+.hero-art svg{width:100%;height:auto;display:block}
+@media (prefers-reduced-motion:no-preference){
+  .hero-art .film-strip{animation:slide 24s linear infinite}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-80px)}}
+}
+
+/* ============ 组件 ============ */
+.card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);box-shadow:var(--shadow-s);overflow:hidden}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--sp-4)}
+.pick-card{display:flex;flex-direction:column}
+.pick-card img{width:100%;height:132px;object-fit:cover;background:#ddd}
+.pick-card .body{padding:var(--sp-3) var(--sp-4) var(--sp-4);display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-card h3{font-size:16px;line-height:1.4}
+.pick-card h3 a{color:var(--c-ink)}
+.pick-card h3 a:hover{color:var(--c-accent);text-decoration:none}
+.meta-line{font-size:12.5px;color:var(--c-muted);display:flex;gap:var(--sp-2);flex-wrap:wrap}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;background:var(--c-teal-soft);color:var(--c-teal);line-height:1.7;white-space:nowrap}
+.tag.gold{background:var(--c-gold-soft);color:var(--c-gold)}
+.tag.red{background:var(--c-accent-soft);color:var(--c-accent)}
+.pick-card .desc{font-size:13.5px;color:var(--c-ink-soft);flex:1}
+.pick-card .foot{font-size:12.5px;color:var(--c-muted);display:flex;justify-content:space-between;border-top:1px dashed var(--c-line);padding-top:8px}
+
+/* 紧凑列表 */
+.list-compact{display:flex;flex-direction:column;gap:0}
+.list-compact li{display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px dashed var(--c-line);align-items:baseline}
+.list-compact li:last-child{border-bottom:0}
+.list-compact .date{font-size:12.5px;color:var(--c-muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.list-compact .t{font-size:15px}
+.list-compact .t a{color:var(--c-ink)}
+.list-compact .t a:hover{color:var(--c-accent)}
+.list-compact .t small{display:block;font-size:12.5px;color:var(--c-muted);font-weight:400}
+.list-compact .badge{font-size:12px;color:var(--c-teal);white-space:nowrap}
+
+/* 分类索引 */
+.cat-index{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--sp-3)}
+.cat-index a{display:flex;flex-direction:column;gap:2px;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-s);padding:var(--sp-3);color:var(--c-ink)}
+.cat-index a:hover{border-color:var(--c-accent);text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-s)}
+.cat-index .cn{font-size:15px;font-weight:600}
+.cat-index .cs{font-size:12px;color:var(--c-muted)}
+
+/* 深度解析 */
+.article-body{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);padding:var(--sp-5) var(--sp-6);box-shadow:var(--shadow-s)}
+.article-body h3{font-family:var(--f-serif);font-size:18.5px;margin:var(--sp-5) 0 var(--sp-2);padding-left:10px;border-left:4px solid var(--c-accent)}
+.article-body h3:first-child{margin-top:0}
+.article-body p{margin:0 0 var(--sp-3);font-size:15.5px;color:var(--c-ink-soft)}
+.article-body strong{color:var(--c-ink)}
+.article-body ul{margin:0 0 var(--sp-3);padding-left:0}
+.article-body ul li{position:relative;padding-left:20px;font-size:15px;color:var(--c-ink-soft);margin-bottom:6px}
+.article-body ul li::before{content:"";position:absolute;left:4px;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--c-gold)}
+.compare{width:100%;border-collapse:collapse;font-size:14px;margin:var(--sp-3) 0 var(--sp-4)}
+.compare caption{caption-side:top;text-align:left;font-size:13px;color:var(--c-muted);padding-bottom:6px}
+.compare th,.compare td{border:1px solid var(--c-line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare th{background:#f7f5f0;font-weight:600;color:var(--c-ink)}
+.compare td{color:var(--c-ink-soft)}
+.quote-card{background:var(--c-teal-soft);border-left:4px solid var(--c-teal);border-radius:var(--radius-s);padding:var(--sp-3) var(--sp-4);font-family:var(--f-serif);font-size:15.5px;color:#143f3c;margin:var(--sp-3) 0}
+.callout{background:var(--c-gold-soft);border:1px solid #ecd9a8;border-radius:var(--radius-s);padding:var(--sp-3) var(--sp-4);font-size:14.5px;color:#5c4710;margin:var(--sp-3) 0}
+
+/* 步骤 */
+.steps{counter-reset:st;display:flex;flex-direction:column;gap:var(--sp-3)}
+.steps li{position:relative;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-s);padding:var(--sp-3) var(--sp-4) var(--sp-3) 58px;box-shadow:var(--shadow-s)}
+.steps li::before{counter-increment:st;content:counter(st,decimal-leading-zero);position:absolute;left:14px;top:12px;font-family:var(--f-serif);font-size:20px;color:var(--c-accent);font-weight:700}
+.steps h3{font-size:15.5px;margin-bottom:2px}
+.steps p{font-size:14px;color:var(--c-ink-soft);margin:0}
+
+/* 对照面板 */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4)}
+.panel{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.panel h3{font-size:16px;margin-bottom:var(--sp-2)}
+.panel.ok{border-top:4px solid var(--c-teal)}
+.panel.no{border-top:4px solid var(--c-accent)}
+.panel ul li{font-size:14px;color:var(--c-ink-soft);padding:5px 0 5px 20px;position:relative}
+.panel.ok ul li::before{content:"✓";position:absolute;left:0;color:var(--c-teal);font-weight:700}
+.panel.no ul li::before{content:"×";position:absolute;left:0;color:var(--c-accent);font-weight:700}
+
+/* FAQ */
+.faq details{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-s);margin-bottom:var(--sp-2);box-shadow:var(--shadow-s)}
+.faq summary{cursor:pointer;padding:var(--sp-3) var(--sp-4);font-size:15.5px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:var(--sp-3);align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--c-accent);font-weight:400;flex:none}
+.faq details[open] summary::after{content:"－"}
+.faq .ans{padding:0 var(--sp-4) var(--sp-3);font-size:14.5px;color:var(--c-ink-soft)}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--sp-4)}
+.comment{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.comment .who{display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2)}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--c-teal-soft);color:var(--c-teal);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex:none}
+.comment .name{font-size:14px;font-weight:600}
+.comment .when{font-size:12px;color:var(--c-muted)}
+.comment p{font-size:14px;color:var(--c-ink-soft);margin:0}
+.comment .stars{color:var(--c-gold);font-size:13px;letter-spacing:1px}
+.comment .ref{font-size:12.5px;color:var(--c-teal);margin-top:6px;display:block}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:24px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--c-line)}
+.timeline li{position:relative;padding-bottom:var(--sp-4)}
+.timeline li::before{content:"";position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--c-surface);border:3px solid var(--c-accent)}
+.timeline .tl-date{font-size:12.5px;color:var(--c-muted);font-variant-numeric:tabular-nums}
+.timeline .tl-title{font-size:15px;font-weight:600;color:var(--c-ink)}
+.timeline .tl-desc{font-size:13.5px;color:var(--c-ink-soft)}
+
+/* 标签索引 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+.tagcloud a{font-size:13.5px;padding:5px 12px;border-radius:99px;background:var(--c-surface);border:1px solid var(--c-line);color:var(--c-ink-soft)}
+.tagcloud a:hover{border-color:var(--c-accent);color:var(--c-accent);text-decoration:none}
+
+/* 榜单 */
+.rank-list{display:flex;flex-direction:column;gap:var(--sp-2)}
+.rank-list li{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:var(--sp-3);align-items:center;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-s);padding:10px var(--sp-3)}
+.rank-list .num{font-family:var(--f-serif);font-size:19px;color:var(--c-muted);text-align:center}
+.rank-list li:nth-child(-n+3) .num{color:var(--c-accent);font-weight:700}
+.rank-list .rt{font-size:15px}
+.rank-list .rt small{display:block;font-size:12px;color:var(--c-muted)}
+.rank-list .score{font-size:13px;color:var(--c-gold);font-weight:600;white-space:nowrap}
+
+/* 侧栏 */
+.sidebar{position:sticky;top:calc(var(--top-announce) + var(--top-header) + 20px);display:flex;flex-direction:column;gap:var(--sp-4)}
+.side-card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.side-card h2{font-size:16px;margin-bottom:var(--sp-3);padding-bottom:var(--sp-2);border-bottom:1px solid var(--c-line)}
+.side-nav a{display:block;font-size:14px;padding:6px 8px;border-radius:var(--radius-s);color:var(--c-ink-soft);border-left:3px solid transparent}
+.side-nav a:hover{background:#f7f5f0;text-decoration:none;color:var(--c-ink)}
+.side-nav a.active{border-left-color:var(--c-accent);background:var(--c-accent-soft);color:var(--c-accent);font-weight:600}
+.side-list li{font-size:13.5px;padding:6px 0;border-bottom:1px dashed var(--c-line);color:var(--c-ink-soft)}
+.side-list li:last-child{border-bottom:0}
+.side-list a{color:var(--c-ink-soft)}
+.side-list a:hover{color:var(--c-accent)}
+.side-note{font-size:12.5px;color:var(--c-muted);line-height:1.7}
+
+/* 页脚 */
+footer{background:var(--c-dark);color:#b9b6ae;margin-top:var(--sp-7);padding:var(--sp-7) 0 var(--sp-5);font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-5)}
+footer h2{font-size:15px;color:#fff;margin-bottom:var(--sp-3);font-family:var(--f-serif);letter-spacing:.5px}
+footer p{font-size:13.5px;line-height:1.8;margin:0 0 var(--sp-2)}
+footer ul li{padding:4px 0;font-size:13.5px}
+footer a{color:#cfcbc2}
+footer a:hover{color:#ffcf7a}
+.foot-bottom{border-top:1px solid #2c3350;margin-top:var(--sp-5);padding-top:var(--sp-4);font-size:12.5px;color:#86837c;display:flex;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-3)}
+.foot-brand svg{width:30px;height:30px}
+.foot-brand span{font-family:var(--f-serif);color:#fff;font-size:17px;font-weight:700}
+
+/* 回到顶部 */
+.to-top{position:fixed;right:18px;bottom:22px;z-index:80;background:var(--c-ink);color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:var(--shadow-m);display:none;align-items:center;justify-content:center}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--c-accent)}
+
+/* 响应式 */
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:static;order:2}
+  main{order:1}
+  .panels{grid-template-columns:1fr}
+  .hero-grid{grid-template-columns:1fr;padding:var(--sp-5)}
+  .hero-art{max-width:340px;margin:0 auto}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .article-body{padding:var(--sp-4)}
+}
+@media (max-width:720px){
+  .main-nav{display:none;flex-basis:100%;flex-direction:column;gap:0;margin:0 0 var(--sp-2);border-top:1px solid var(--c-line);padding-top:var(--sp-2)}
+  .main-nav.open{display:flex}
+  .main-nav a{padding:9px 8px;font-size:15px}
+  .nav-toggle{display:inline-flex}
+  .search-box{margin-left:auto}
+  .search-box input{width:120px}
+  .head-inner{padding-top:var(--sp-2);padding-bottom:var(--sp-2);gap:var(--sp-2)}
+  .hero h1{font-size:26px}
+  .hero-stats div strong{font-size:20px}
+  .list-compact li{grid-template-columns:64px minmax(0,1fr);gap:var(--sp-2)}
+  .list-compact .badge{display:none}
+  .to-top{bottom:16px;right:12px;width:40px;height:40px}
+}
+@media (max-width:420px){
+  .brand-text{font-size:16px}
+  .search-box input{width:96px;padding:6px 8px}
+  .cat-index{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+  .cat-index a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="top-wrap">
+  <div class="announce" role="region" aria-label="站内更新公告">
+    <div class="announce-inner">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>传媒91mv免费播放</b>片单库 11 月 7 日更新：《冬泳》4K 修复版上线，电视剧《雾港》第 9 集提前两小时放出，<a href="/#latest">查看本周全部 23 条更新</a></span>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="传媒91mv免费播放首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1b2340"/>
+          <path d="M17 47V17h9l6 13 6-13h9v30h-8V30l-7 14-7-14v17z" fill="#ffb84d"/>
+          <circle cx="48" cy="18" r="5" fill="#c8452b"/>
+        </svg>
+        <span class="brand-text">传媒91mv免费播放</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        <span aria-hidden="true">☰</span> 频道菜单
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="主题频道">
+        <a href="/#pick">本周精选</a>
+        <a href="/#latest">更新记录</a>
+        <a href="/#channels">题材频道</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#reviews">观众评论</a>
+      </nav>
+      <form class="search-box" id="searchForm" role="search">
+        <label for="searchInput" class="sr-only" style="position:absolute;left:-9999px">站内查找片名或题材</label>
+        <input type="search" id="searchInput" placeholder="找片名 / 题材" autocomplete="off">
+        <button type="submit">查找</button>
+        <div class="search-msg" id="searchMsg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </header>
+</div>
+
+<div class="wrap" id="top">
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">片单库 · 2026 年 11 月版</span>
+        <h1 id="heroTitle">传媒91mv免费播放</h1>
+        <p>收录院线新片、国产剧集、纪录片与短片共 1860 部，按题材、时长、清晰度、字幕语言四项筛选。每部条目附播放规则、版本说明与三条以上观众短评，方便在通勤、午休、周末整块时间之间选片。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#pick">看本周精选</a>
+          <a class="btn btn-ghost" href="/#latest">最近更新 23 条</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1860</strong><span>在库片目</span></div>
+          <div><strong>412</strong><span>带 4K 版本</span></div>
+          <div><strong>23</strong><span>本周新增</span></div>
+          <div><strong>9</strong><span>题材频道</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 300" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2a3355"/><stop offset="1" stop-color="#141a2e"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffb84d"/><stop offset="1" stop-color="#c8452b"/>
+            </linearGradient>
+          </defs>
+          <rect x="12" y="20" width="336" height="200" rx="14" fill="url(#g1)" stroke="#3a4468"/>
+          <g class="film-strip" opacity=".9">
+            <rect x="24" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="50" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="76" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="102" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="128" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="154" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="180" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="206" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="232" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="258" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="284" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="310" y="40" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="24" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="50" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="76" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="102" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="128" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="154" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="180" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="206" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="232" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="258" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="284" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+            <rect x="310" y="176" width="18" height="26" rx="3" fill="#0d1120"/>
+          </g>
+          <rect x="70" y="86" width="132" height="82" rx="8" fill="#1f6f6b" opacity=".55"/>
+          <path d="M118 110l40 22-40 22z" fill="url(#g2)"/>
+          <rect x="216" y="92" width="96" height="9" rx="4" fill="#4a5478"/>
+          <rect x="216" y="110" width="76" height="9" rx="4" fill="#4a5478"/>
+          <rect x="216" y="128" width="86" height="9" rx="4" fill="#4a5478"/>
+          <rect x="216" y="146" width="56" height="9" rx="4" fill="#ffb84d" opacity=".8"/>
+          <rect x="52" y="232" width="120" height="34" rx="8" fill="#2a3355"/>
+          <text x="66" y="254" font-size="13" fill="#c9c6bd" font-family="sans-serif">本周 23 条更新</text>
+          <rect x="184" y="232" width="120" height="34" rx="8" fill="#2a3355"/>
+          <text x="198" y="254" font-size="13" fill="#c9c6bd" font-family="sans-serif">412 部 4K 片目</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <main>
+
+      <!-- 领域概览 -->
+      <section id="overview" aria-labelledby="overviewTitle">
+        <div class="sec-head">
+          <h2 id="overviewTitle">频道概览：影视在线片单在做什么</h2>
+          <span class="hint">数据截至 2026-11-08</span>
+        </div>
+        <div class="panels">
+          <div class="panel ok">
+            <h3>能直接解决的</h3>
+            <ul>
+              <li>按 30 分钟内、90 分钟左右、两小时以上三档筛片</li>
+              <li>标注每部片是否有 4K、是否为修复版、字幕语言</li>
+              <li>国产剧集按更新集数排序，标注单集时长</li>
+              <li>经典老片注明修复批次与原始画幅比例</li>
+            </ul>
+          </div>
+          <div class="panel no">
+            <h3>不做或者做不全的</h3>
+            <ul>
+              <li>不提供下载，播放依赖浏览器与网络环境</li>
+              <li>院线新片窗口期未到的条目只做预告登记</li>
+              <li>冷门地区电影缺中文字幕时只标注原声</li>
+              <li>不代用户处理第三方应用的安装问题</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:15px;color:var(--c-ink-soft);margin-top:var(--sp-3)">片单以国产剧情片、都市剧、自然纪录片三类为主，占全库约 61%。剩下部分包括港台旧片修复、日韩剧、动画短片集。每个条目最少挂两个标签，一个题材标签，一个时长或版本标签，标签可以在频道页交叉筛选。</p>
+      </section>
+
+      <!-- 本周精选 -->
+      <section id="pick" aria-labelledby="pickTitle">
+        <div class="sec-head">
+          <h2 id="pickTitle">本周精选：七部值得留出整块时间的片</h2>
+          <a class="more" href="/#latest">全部片单 →</a>
+        </div>
+        <div class="grid-cards">
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/dongyong2026/420/280" width="420" height="280" loading="lazy" alt="《冬泳》冬季冰湖场景剧照" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#deep">冬泳 · 4K 修复版</a></h3>
+              <div class="meta-line"><span>剧情片</span><span>112 分钟</span><span class="tag red">4K</span></div>
+              <p class="desc">1990 年代东北小城，三个下岗工人守着结冰的湖面。修复版把原片偏黄的色调降了一档，雪地细节更清楚。</p>
+              <div class="foot"><span>观众评分 8.6</span><span>11-07 上线</span></div>
+            </div>
+          </article>
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/wugang2026/420/280" width="420" height="280" loading="lazy" alt="《雾港》港口夜景剧照" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#latest">雾港 · 第 9 集</a></h3>
+              <div class="meta-line"><span>都市悬疑</span><span>单集 46 分钟</span><span class="tag">追更中</span></div>
+              <p class="desc">港务局调度员与海关稽查员的双线叙事。第 9 集把前八集的时间线收拢，两处伏笔对上了。</p>
+              <div class="foot"><span>观众评分 8.1</span><span>11-07 提前更新</span></div>
+            </div>
+          </article>
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/yanhu2026/420/280" width="420" height="280" loading="lazy" alt="盐湖生态纪录片中的粉色湖面与鸟群" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#deep">盐湖四年</a></h3>
+              <div class="meta-line"><span>自然纪录片</span><span>3 集 × 50 分钟</span><span class="tag gold">修复批次 A</span></div>
+              <p class="desc">摄制组在柴达木盆地蹲守四个完整雨季，记录了盐湖水位从 3.2 米降到 2.4 米的全过程。</p>
+              <div class="foot"><span>观众评分 9.2</span><span>11-05 上线</span></div>
+            </div>
+          </article>
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/xiaoyuan2026/420/280" width="420" height="280" loading="lazy" alt="《小院有戏》老城院子搭台唱戏的剧照" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#channels">小院有戏</a></h3>
+              <div class="meta-line"><span>生活喜剧</span><span>24 集</span><span class="tag">已完结</span></div>
+              <p class="desc">社区票友社租下废弃粮站改戏台。第 14 集到第 17 集的排练段落，是近两年国产剧里少见的群戏调度。</p>
+              <div class="foot"><span>观众评分 7.9</span><span>11-03 全集上线</span></div>
+            </div>
+          </article>
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/tielu2026/420/280" width="420" height="280" loading="lazy" alt="绿皮火车车厢内乘客与行李的剧照" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#latest">绿皮车 · 短片集</a></h3>
+              <div class="meta-line"><span>短片</span><span>6 部 / 共 74 分钟</span><span class="tag">新上线</span></div>
+              <p class="desc">六位导演各拍一段绿皮车上的相遇。第三部《上铺》只有 11 分钟，靠一句方言台词把故事收住了。</p>
+              <div class="foot"><span>观众评分 7.6</span><span>10-31 上线</span></div>
+            </div>
+          </article>
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/changpian2026/420/280" width="420" height="280" loading="lazy" alt="《长篇的代价》导演剪辑版片场照" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#deep">长篇的代价 · 导演剪辑版</a></h3>
+              <div class="meta-line"><span>纪录片</span><span>186 分钟</span><span class="tag red">导演剪辑</span></div>
+              <p class="desc">记录一部拍了七年的电影如何一次次换投资方。剪辑版比公映版多出 47 分钟，多了三位制片人的访谈。</p>
+              <div class="foot"><span>观众评分 8.8</span><span>10-28 上线</span></div>
+            </div>
+          </article>
+          <article class="pick-card card">
+            <img src="https://picsum.photos/seed/xiaozhen2026/420/280" width="420" height="280" loading="lazy" alt="《小镇理发店》街边店面剧照" style="object-fit:cover">
+            <div class="body">
+              <h3><a href="/#channels">小镇理发店</a></h3>
+              <div class="meta-line"><span>剧情片</span><span>96 分钟</span><span class="tag gold">方言原声</span></div>
+              <p class="desc">一间开了 28 年的理发店要拆，老板和四个常客最后营业一天。全片只用了 11 个场景。</p>
+              <div class="foot"><span>观众评分 8.3</span><span>10-25 上线</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section id="latest" aria-labelledby="latestTitle">
+        <div class="sec-head">
+          <h2 id="latestTitle">更新记录：11 月 1 日至 11 月 8 日</h2>
+          <span class="hint">共 23 条，按时间倒序</span>
+        </div>
+        <ul class="list-compact card" style="padding:var(--sp-2) var(--sp-4)">
+          <li>
+            <span class="date">11-08</span>
+            <span class="t"><a href="/#pick">《冬泳》4K 修复版补充字幕轨</a><small>新增简中硬字幕与繁中软字幕两版，片长不变</small></span>
+            <span class="badge">修订</span>
+          </li>
+          <li>
+            <span class="date">11-07</span>
+            <span class="t"><a href="/#pick">《雾港》第 9 集上线</a><small>原定 20:00，提前到 18:00，单集 46 分钟</small></span>
+            <span class="badge">首播</span>
+          </li>
+          <li>
+            <span class="date">11-07</span>
+            <span class="t"><a href="/#channels">港片修复专区新增 6 部</a><small>1987—1994 年间作品，含 3 部 2K 扫描</small></span>
+            <span class="badge">片单</span>
+          </li>
+          <li>
+            <span class="date">11-06</span>
+            <span class="t"><a href="/#guide">播放器兼容说明更新</a><small>Safari 17 下 4K 片源切换清晰度失败的问题已记录</small></span>
+            <span class="badge">说明</span>
+          </li>
+          <li>
+            <span class="date">11-05</span>
+            <span class="t"><a href="/#pick">《盐湖四年》全 3 集上线</a><small>每集 50 分钟，第 2 集含 12 分钟未播片段</small></span>
+            <span class="badge">首播</span>
+          </li>
+          <li>
+            <span class="date">11-03</span>
+            <span class="t"><a href="/#pick">《小院有戏》24 集全集放出</a><small>最后两集合并为一次更新，总计 24 集</small></span>
+            <span class="badge">完结</span>
+          </li>
+          <li>
+            <span class="date">11-01</span>
+            <span class="t"><a href="/#deep">《长篇的代价》导演剪辑版追加访谈</a><small>新增制片人访谈 18 分钟，原剪辑版保留</small></span>
+            <span class="badge">修订</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section id="channels" aria-labelledby="channelsTitle">
+        <div class="sec-head">
+          <h2 id="channelsTitle">题材频道：九个常搜分类</h2>
+          <span class="hint">点击进入对应筛选页</span>
+        </div>
+        <div class="cat-index">
+          <a href="/#pick"><span class="cn">国产剧情长片</span><span class="cs">318 部 · 平均 104 分钟</span></a>
+          <a href="/#pick"><span class="cn">都市悬疑剧集</span><span class="cs">96 部 · 更新中 21 部</span></a>
+          <a href="/#pick"><span class="cn">自然与地理纪录片</span><span class="cs">174 部 · 4K 占 62%</span></a>
+          <a href="/#pick"><span class="cn">港台旧片修复</span><span class="cs">203 部 · 1980—1999 年</span></a>
+          <a href="/#pick"><span class="cn">短片与提案集</span><span class="cs">288 部 · 单片 8—35 分钟</span></a>
+          <a href="/#pick"><span class="cn">方言电影</span><span class="cs">67 部 · 含 12 种方言</span></a>
+          <a href="/#pick"><span class="cn">生活喜剧</span><span class="cs">112 部 · 单集 20—50 分钟</span></a>
+          <a href="/#pick"><span class="cn">动画短片集</span><span class="cs">84 部 · 儿童分级标注</span></a>
+          <a href="/#pick"><span class="cn">音乐与舞台实录</span><span class="cs">58 部 · 现场收音版</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section id="deep" aria-labelledby="deepTitle">
+        <div class="sec-head">
+          <h2 id="deepTitle">深度解析：修复版到底修好了什么</h2>
+          <span class="hint">阅读约 8 分钟</span>
+        </div>
+        <div class="article-body">
+          <p>《冬泳》4K 修复版上线后，评论区最集中的争论是“画面变亮了，但冬天的冷没了”。这个判断可以拆成两条：一是数字修复对原始胶片色调的处理边界，二是观众对 1990 年代东北题材的固定期待。两条都值得单独核对。</p>
+
+          <h3>第一件事：修复前后的可核对变化</h3>
+          <p>片方在 11 月 1 日公布的修复日志里，列出了三个处理步骤：4K 扫描、逐帧除尘、色调映射。<strong>扫描用的原始底片是 1997 年洗印的中间片，不是原始摄影负片</strong>，中间片本身已经过一次色彩压缩。这意味着修复团队拿到的起点，比摄影负片少一档宽容度。公映版对比修复版的雪地亮度，前者平均灰度值 128，后者 147，提升约 15%。这个数字来自片方公开的技术说明，不是猜测。</p>
+          <table class="compare">
+            <caption>《冬泳》两个版本的参数对照（数据源：片方 11-01 修复日志）</caption>
+            <thead>
+              <tr><th>项目</th><th>1997 公映版</th><th>2026 修复版</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>扫描分辨率</td><td>2K 转制</td><td>4K 扫描</td></tr>
+              <tr><td>雪地平均亮度</td><td>灰度 128</td><td>灰度 147</td></tr>
+              <tr><td>音轨</td><td>单声道</td><td>5.1 重混 + 原单声道</td></tr>
+              <tr><td>片长</td><td>110 分钟</td><td>112 分钟（补入两段过场）</td></tr>
+            </tbody>
+          </table>
+          <p>帧率没有动，仍是 24 帧。补入的两分钟是当年送审时删掉的湖边对话，台词只有 9 句，但对理解第三个角色的动机有作用。这一点可以在两个版本对看时核对：公映版里第三个人物在湖面段落出现得突兀，修复版补了前后衔接。</p>
+
+          <h3>第二件事：关于“冷没了”的三种说法</h3>
+          <p>争论里出现了三种说法，性质不同，需要分开看。</p>
+          <ul>
+            <li><strong>事实层：</strong>修复版雪地亮度提升，蓝灰色调被往中性方向拉。这是技术日志写明的内容。</li>
+            <li><strong>转述层：</strong>有影迷在讨论区称“修复版把整部片调成了白天”，这条说法与样片对比不符，样片里夜景段落仍保留蓝灰。</li>
+            <li><strong>推测层：</strong>有人认为提亮是为了适配 4K 电视的高动态范围，片方未回应这一说法，属于没有出处的推测。</li>
+          </ul>
+          <p>片方在 11 月 3 日的说明里只确认了一件事：修复版提供“修复调色”与“原始调色”两个选项，用户可以在播放页的版本切换里选择。这条是事实，且可以直接验证。至于哪种更接近导演意图，导演本人没有公开表态。</p>
+
+          <div class="quote-card">“亮度上去了，颗粒也细了，可湖面那种灰白的感觉，我看了两遍还是觉得公映版更对。”——观众评论，11-06，指向湖面段落</div>
+
+          <h3>第三件事：修复批次与字样标注的规则</h3>
+          <p>修复专区目前标注了 A、B 两个批次。A 批是底片完整、能直接 4K 扫描的，共 41 部；B 批是只有中间片或拷贝的，共 63 部，标注为“2K 扫描转 4K 输出”。这个区分对普通观众的实际意义有限，但对判断画面细节有作用：B 批次的雪景、雨景容易在暗部出现块状噪点。片单里给 B 批条目加了灰色标记，点开条目详情能看到扫描来源。</p>
+          <div class="callout">判断一部修复值不值得看，先看扫描来源，再看是否保留了原始音轨。两项都在条目详情页的版本信息栏里，不用另外查。</div>
+
+          <h3>一个可以被反驳的判断</h3>
+          <p>我的判断是：<strong>修复版对这部片最大的价值不在画面，而在补回的两分钟和 5.1 音轨里的环境声</strong>。理由是画面提亮带来的争议本身说明，原作的美学成立在偏暗的色调上，修复不可能让所有人满意；而补回的过场和重混的水声、风声，补的是叙事和空间信息，不涉及审美分歧。反驳这条判断也简单：如果两分钟过场只是交代人物去向，对主线理解没有增量，那它的价值就低于画面清晰度的普遍提升。持这个看法的观众，可以只切“原始调色”版本，跳过补入片段。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section id="guide" aria-labelledby="guideTitle">
+        <div class="sec-head">
+          <h2 id="guideTitle">观看指南：从打开页面到看完一部片</h2>
+          <span class="hint">四步走完</span>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>先定时长，再挑片</h3>
+            <p>通勤 30 分钟以内选短片集，午休选 90 分钟左右的剧情片，周末整块时间再碰三小时以上的导演剪辑版。片单页顶部有时长滑块，默认全选。</p>
+          </li>
+          <li>
+            <h3>看版本信息栏</h3>
+            <p>每部片详情页第一屏右侧有版本栏，标扫描来源、音轨、片长、字幕语言。修复片优先看这里，别只看封面截图。</p>
+          </li>
+          <li>
+            <h3>播放页切换清晰度</h3>
+            <p>默认按网络自适应。4K 片目在带宽不足时会回落到 1080p，右上角清晰度按钮可以手动锁定。Safari 17 下切换偶有失败，刷新一次页面即可。</p>
+          </li>
+          <li>
+            <h3>看完写一条短评</h3>
+            <p>评论框要求写清指向哪一段或哪一集，空泛的“好看”“难看”不会被展示。短评提交后十分钟内可见。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" aria-labelledby="faqTitle">
+        <div class="sec-head">
+          <h2 id="faqTitle">常见问题：播放与片单</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>4K 修复版和原版能同时看吗？</summary>
+            <div class="ans">能在播放页的版本切换里选，两个版本共用同一个条目页，切换不丢失播放进度。修复版默认加载 4K 片源，原版为 1080p。</div>
+          </details>
+          <details>
+            <summary>《雾港》第 9 集为什么提前更新？</summary>
+            <div class="ans">片方 11 月 7 日的排播通知把上线时间从 20:00 调到 18:00，理由是避开同档期另一部剧的首播。第 10 集仍按原计划 11 月 14 日更新。</div>
+          </details>
+          <details>
+            <summary>短片集里的条目为什么没有单集评分？</summary>
+            <div class="ans">短片集按整包评分，单部短片不单独开评分入口。原因是单片时长太短，评分样本容易集中在少数几部，参考价值低。单片可以在评论区单独讨论。</div>
+          </details>
+          <details>
+            <summary>方言电影没有字幕怎么办？</summary>
+            <div class="ans">条目页会标注方言种类和是否有简中字幕。缺字幕的条目在播放页提供文字梗概，覆盖主要情节节点，不替代台词。</div>
+          </details>
+          <details>
+            <summary>修复批次 A 和 B 的差别影响观看吗？</summary>
+            <div class="ans">影响主要在暗部细节。B 批次是 2K 扫描转 4K 输出，雪景、夜景容易出现块状噪点，正常观看距离下不明显，大屏投影会看出来。</div>
+          </details>
+          <details>
+            <summary>导演剪辑版比公映版多出的内容值得看吗？</summary>
+            <div class="ans">《长篇的代价》多出的 47 分钟里，有 31 分钟是三位制片人的访谈，16 分钟是片场素材。访谈部分信息密度高，片场素材偏重复，可以按章节跳看。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 观众评论 -->
+      <section id="reviews" aria-labelledby="reviewsTitle">
+        <div class="sec-head">
+          <h2 id="reviewsTitle">观众评论：近七天 6 条</h2>
+          <span class="hint">按条目归档</span>
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <div class="who">
+              <span class="avatar" aria-hidden="true">林</span>
+              <div><div class="name">林间有雾</div><div class="when">11-08 · 《冬泳》修复版</div></div>
+            </div>
+            <div class="stars" aria-label="评分 4 星">★★★★☆</div>
+            <p>切到原始调色看了一遍，湖面那段确实更对。修复调色不是不好，是亮得有点平均，雪和天的层次反而平了。</p>
+            <span class="ref">指向：湖面段落 · 版本切换</span>
+          </div>
+          <div class="comment">
+            <div class="who">
+              <span class="avatar" aria-hidden="true">周</span>
+              <div><div class="name">周末补片人</div><div class="when">11-07 · 《雾港》第 9 集</div></div>
+            </div>
+            <div class="stars" aria-label="评分 4 星">★★★★☆</div>
+            <p>第 9 集把第八集那个调度表的时间对上了，前面看着像穿帮的地方其实是伏笔。就是 46 分钟里塞了三条线，中段有点赶。</p>
+            <span class="ref">指向：第 9 集 · 调度表时间线</span>
+          </div>
+          <div class="comment">
+            <div class="who">
+              <span class="avatar" aria-hidden="true">陈</span>
+              <div><div class="name">陈皮不加糖</div><div class="when">11-06 · 《小院有戏》</div></div>
+            </div>
+            <div class="stars" aria-label="评分 3 星">★★★☆☆</div>
+            <p>第 14 到 17 集的排练群戏是真好看，其余集数像注水。24 集砍到 16 集会更好，现在看到第 20 集有点疲。</p>
+            <span class="ref">指向：第 14—17 集 · 排练段落</span>
+          </div>
+          <div class="comment">
+            <div class="who">
+              <span class="avatar" aria-hidden="true">吴</span>
+              <div><div class="name">吴记放映员</div><div class="when">11-05 · 《盐湖四年》</div></div>
+            </div>
+            <div class="stars" aria-label="评分 5 星">★★★★★</div>
+            <p>第 2 集那 12 分钟未播片段值得单看，讲的是补给车陷进盐壳那两天。纪录片里少见的、不回避拍摄困难的段落。</p>
+            <span class="ref">指向：第 2 集 · 未播片段</span>
+          </div>
+          <div class="comment">
+            <div class="who">
+              <span class="avatar" aria-hidden="true">郑</span>
+              <div><div class="name">郑在等更新</div><div class="when">11-05 · 港片修复专区</div></div>
+            </div>
+            <div class="stars" aria-label="评分 3 星">★★★☆☆</div>
+            <p>新加的 6 部里，3 部 2K 扫描转 4K 输出的，暗部噪点比 A 批次明显。片单标注了扫描来源，这点算诚实，点开前能心里有数。</p>
+            <span class="ref">指向：港片修复专区 · B 批次</span>
+          </div>
+          <div class="comment">
+            <div class="who">
+              <span class="avatar" aria-hidden="true">何</span>
+              <div><div class="name">何处不青山</div><div class="when">11-04 · 播放器兼容</div></div>
+            </div>
+            <div class="stars" aria-label="评分 2 星">★★☆☆☆</div>
+            <p>Safari 上切 4K 确实会卡住，刷新才恢复。说明里写了这个问题，但没说什么时候修，体验上还是扣分。</p>
+            <span class="ref">指向：播放器兼容说明 · Safari 17</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section id="news" aria-labelledby="newsTitle">
+        <div class="sec-head">
+          <h2 id="newsTitle">相关资讯</h2>
+        </div>
+        <div class="grid-cards">
+          <article class="pick-card card" style="padding:var(--sp-4)">
+            <h3 style="font-size:15.5px"><a href="/#latest">国内三家片库同步上线 1990 年代修复计划</a></h3>
+            <p class="desc" style="font-size:14px;margin-top:6px">首批各 20 部，扫描标准统一为 4K，中间片来源单独标注。三家片库的批次编号不通用，跨库对照要看片名和年份。</p>
+            <div class="foot" style="margin-top:8px"><span>11-06</span><span class="tag">行业</span></div>
+          </article>
+          <article class="pick-card card" style="padding:var(--sp-4)">
+            <h3 style="font-size:15.5px"><a href="/#deep">纪录片《盐湖四年》拍摄团队公布第二阶段计划</a></h3>
+            <p class="desc" style="font-size:14px;margin-top:6px">第二阶段将记录盐湖水位从 2.4 米继续下降后的生态变化，预计 2027 年夏季完成拍摄，2028 年上线。</p>
+            <div class="foot" style="margin-top:8px"><span>11-05</span><span class="tag gold">纪录片</span></div>
+          </article>
+          <article class="pick-card card" style="padding:var(--sp-4)">
+            <h3 style="font-size:15.5px"><a href="/#guide">浏览器 4K 播放兼容清单更新到 11 月版</a></h3>
+            <p class="desc" style="font-size:14px;margin-top:6px">Chrome 130 与 Edge 130 实测正常，Safari 17.6 切换清晰度仍有失败记录，Firefox 131 在 Linux 下缺少硬解。</p>
+            <div class="foot" style="margin-top:8px"><span>11-04</span><span class="tag">技术</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 榜单 -->
+      <section id="rank" aria-labelledby="rankTitle">
+        <div class="sec-head">
+          <h2 id="rankTitle">本月口碑榜：按观众评分排序</h2>
+          <span class="hint">样本 ≥ 200 条评论</span>
+        </div>
+        <ol class="rank-list">
+          <li><span class="num">1</span><span class="rt">盐湖四年<small>自然纪录片 · 3 集 · 2026-11-05</small></span><span class="score">9.2</span></li>
+          <li><span class="num">2</span><span class="rt">长篇的代价 · 导演剪辑版<small>纪录片 · 186 分钟 · 2026-10-28</small></span><span class="score">8.8</span></li>
+          <li><span class="num">3</span><span class="rt">冬泳 · 4K 修复版<small>剧情片 · 112 分钟 · 2026-11-07</small></span><span class="score">8.6</span></li>
+          <li><span class="num">4</span><span class="rt">小镇理发店<small>剧情片 · 96 分钟 · 方言原声</small></span><span class="score">8.3</span></li>
+          <li><span class="num">5</span><span class="rt">雾港<small>都市悬疑 · 更新至第 9 集</small></span><span class="score">8.1</span></li>
+          <li><span class="num">6</span><span class="rt">小院有戏<small>生活喜剧 · 24 集 · 已完结</small></span><span class="score">7.9</span></li>
+          <li><span class="num">7</span><span class="rt">绿皮车 · 短片集<small>短片 · 6 部 / 74 分钟</small></span><span class="score">7.6</span></li>
+        </ol>
+      </section>
+
+      <!-- 时间线 -->
+      <section id="timeline" aria-labelledby="timelineTitle">
+        <div class="sec-head">
+          <h2 id="timelineTitle">修复与上线时间线</h2>
+          <span class="hint">10 月 9 日至 11 月 8 日</span>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="tl-date">10-09</div>
+            <div class="tl-title">《冬泳》原始底片完成 4K 扫描</div>
+            <div class="tl-desc">扫描工作在片库完成，中间片与摄影负片各扫一次，以中间片为主。</div>
+          </li>
+          <li>
+            <div class="tl-date">10-25</div>
+            <div class="tl-title">《小镇理发店》上线</div>
+            <div class="tl-desc">方言原声版与普通话配音版同时上线，两个版本片长一致。</div>
+          </li>
+          <li>
+            <div class="tl-date">10-28</div>
+            <div class="tl-title">《长篇的代价》导演剪辑版上线</div>
+            <div class="tl-desc">多出 47 分钟，含三位制片人访谈与片场素材。</div>
+          </li>
+          <li>
+            <div class="tl-date">11-01</div>
+            <div class="tl-title">修复日志公开</div>
+            <div class="tl-desc">公布扫描分辨率、雪地亮度变化与补入片段的时长。</div>
+          </li>
+          <li>
+            <div class="tl-date">11-03</div>
+            <div class="tl-title">修复调色与原始调色双版本上线</div>
+            <div class="tl-desc">播放页新增版本切换，两种调色共用播放进度。</div>
+          </li>
+          <li>
+            <div class="tl-date">11-07</div>
+            <div class="tl-title">《雾港》第 9 集提前两小时上线</div>
+            <div class="tl-desc">原定 20:00，实际 18:00 放出，未影响第 10 集排期。</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section id="related" aria-labelledby="relatedTitle">
+        <div class="sec-head">
+          <h2 id="relatedTitle">相关推荐：按搜索词归类</h2>
+        </div>
+        <div class="tagcloud">
+          <a href="/#pick">4K 修复版国产剧情片</a>
+          <a href="/#pick">90 分钟以内剧情长片</a>
+          <a href="/#pick">东北东北工业题材电影</a>
+          <a href="/#pick">都市悬疑剧更新中</a>
+          <a href="/#pick">自然地理纪录片 4K</a>
+          <a href="/#pick">柴达木盐湖纪录片</a>
+          <a href="/#pick">港片修复 2K 转 4K</a>
+          <a href="/#pick">方言电影原声版</a>
+          <a href="/#pick">绿皮车题材短片</a>
+          <a href="/#pick">导演剪辑版三小时以上</a>
+          <a href="/#pick">生活喜剧群戏推荐</a>
+          <a href="/#pick">动画短片儿童适龄</a>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="sidebar" aria-label="栏目导航与补充信息">
+      <div class="side-card">
+        <h2>页内导航</h2>
+        <nav class="side-nav" id="sideNav" aria-label="页内栏目">
+          <a href="/#overview">频道概览</a>
+          <a href="/#pick">本周精选</a>
+          <a href="/#latest">更新记录</a>
+          <a href="/#channels">题材频道</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">观看指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#reviews">观众评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rank">本月口碑榜</a>
+          <a href="/#timeline">修复时间线</a>
+          <a href="/#related">相关推荐</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <h2>本周更新速览</h2>
+        <ul class="side-list">
+          <li><a href="/#latest">11-08 冬泳修复版补字幕轨</a></li>
+          <li><a href="/#latest">11-07 雾港第 9 集提前上线</a></li>
+          <li><a href="/#latest">11-07 港片修复新增 6 部</a></li>
+          <li><a href="/#latest">11-06 播放器兼容说明更新</a></li>
+          <li><a href="/#latest">11-05 盐湖四年全 3 集上线</a></li>
+          <li><a href="/#latest">11-03 小院有戏全集放出</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>观看小贴士</h2>
+        <p class="side-note">修复片先看版本信息栏的扫描来源。A 批次为底片直接 4K 扫描，B 批次为 2K 扫描转 4K 输出，暗部细节差别在大屏上更明显。短片集按整包评分，单片讨论请进对应条目评论区。</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer id="foot">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2a3355"/>
+            <path d="M17 47V17h9l6 13 6-13h9v30h-8V30l-7 14-7-14v17z" fill="#ffb84d"/>
+            <circle cx="48" cy="18" r="5" fill="#c8452b"/>
+          </svg>
+          <span>传媒91mv免费播放</span>
+        </div>
+        <p style="color:#cfcbc2">影视片单与观看说明，按题材、时长、清晰度组织条目。修复版本标明扫描来源，剧集标明更新节奏。</p>
+        <p style="color:#86837c;font-size:12.5px">条目资料为示例数据，片名、评分、播放规则均用于展示站内结构，不对应真实片库。</p>
+      </div>
+      <div>
+        <h2>片单</h2>
+        <ul>
+          <li><a href="/#pick">本周精选</a></li>
+          <li><a href="/#latest">更新记录</a></li>
+          <li><a href="/#channels">题材频道</a></li>
+          <li><a href="/#rank">本月口碑榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>说明</h2>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>互动</h2>
+        <ul>
+          <li><a href="/#reviews">观众评论</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#timeline">修复时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>最后更新：2026-11-08 · 对应正文更新项：冬泳字幕轨修订、雾港第 9 集上线、港片修复新增 6 部</span>
+      <span>© 2026 传媒91mv免费播放 · 示例站展示用</span>
+    </div>
+  </footer>
+
+</div>
+
+<button class="to-top" id="toTop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var navToggle=document.getElementById('navToggle');
+  var mainNav=document.getElementById('mainNav');
+  if(navToggle&&mainNav){
+    navToggle.addEventListener('click',function(){
+      var open=mainNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded',open?'true':'false');
+    });
+    mainNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=720){
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var searchForm=document.getElementById('searchForm');
+  var searchInput=document.getElementById('searchInput');
+  var searchMsg=document.getElementById('searchMsg');
+  if(searchForm){
+    searchForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      var q=searchInput.value.trim();
+      if(!q){
+        searchMsg.textContent='请输入片名、题材或版本关键词，例如“冬泳”“纪录片”。';
+        searchMsg.classList.add('show');
+        return;
+      }
+      var bodyText=document.body.innerText||'';
+      if(bodyText.indexOf(q)>-1){
+        searchMsg.textContent='已找到与“'+q+'”相关的条目，请看下方片单与更新记录。';
+      }else{
+        searchMsg.textContent='没有找到与“'+q+'”匹配的片名或题材。可以试试“修复”“纪录片”“短片集”。';
+      }
+      searchMsg.classList.add('show');
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  function onScroll(){
+    if(window.scrollY>420){
+      toTop.classList.add('show');
+    }else{
+      toTop.classList.remove('show');
+    }
+    var pos=window.scrollY+120;
+    var current=null;
+    sideLinks.forEach(function(a){
+      var id=a.getAttribute('href').replace('/#','');
+      var el=document.getElementById(id);
+      if(el&&el.offsetTop<=pos) current=a;
+    });
+    sideLinks.forEach(function(a){a.classList.remove('active');});
+    if(current) current.classList.add('active');
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  toTop&&toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"传媒91mv免费播放",
+  "description":"影视片单与观看说明站点，按题材、时长、清晰度组织条目，涵盖修复版说明、剧集更新与观众评论。",
+  "inLanguage":"zh-CN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"4K 修复版和原版能同时看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"能在播放页的版本切换里选，两个版本共用同一个条目页，切换不丢失播放进度。修复版默认加载 4K 片源，原版为 1080p。"}
+    },
+    {
+      "@type":"Question",
+      "name":"《雾港》第 9 集为什么提前更新？",
+      "acceptedAnswer":{"@type":"Answer","text":"片方 11 月 7 日的排播通知把上线时间从 20:00 调到 18:00，理由是避开同档期另一部剧的首播。第 10 集仍按原计划 11 月 14 日更新。"}
+    },
+    {
+      "@type":"Question",
+      "name":"短片集里的条目为什么没有单集评分？",
+      "acceptedAnswer":{"@type":"Answer","text":"短片集按整包评分，单部短片不单独开评分入口。原因是单片时长太短，评分样本容易集中在少数几部，参考价值低。单片可以在评论区单独讨论。"}
+    },
+    {
+      "@type":"Question",
+      "name":"方言电影没有字幕怎么办？",
+      "acceptedAnswer":{"@type":"Answer","text":"条目页会标注方言种类和是否有简中字幕。缺字幕的条目在播放页提供文字梗概，覆盖主要情节节点，不替代台词。"}
+    },
+    {
+      "@type":"Question",
+      "name":"修复批次 A 和 B 的差别影响观看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"影响主要在暗部细节。B 批次是 2K 扫描转 4K 输出，雪景、夜景容易出现块状噪点，正常观看距离下不明显，大屏投影会看出来。"}
+    },
+    {
+      "@type":"Question",
+      "name":"导演剪辑版比公映版多出的内容值得看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"《长篇的代价》多出的 47 分钟里，有 31 分钟是三位制片人的访谈，16 分钟是片场素材。访谈部分信息密度高，片场素材偏重复，可以按章节跳看。"}
+    }
+  ]
+}
+</script>
+
+</body>
+          </html>
